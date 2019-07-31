@@ -1896,18 +1896,5 @@ const dataTable = [
     Status: "",
     "Order #": "",
     Archived: ""
-  },
-  {
-    Order: "",
-    Buyer: "",
-    Store: "",
-    Account: "",
-    "Checkout Date": "",
-    "In-Hands Date": "",
-    "# Line Items": "",
-    "Order $": "",
-    Status: "",
-    "Order #": "",
-    Archived: ""
   }
 ];

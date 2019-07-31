@@ -1,5 +1,28 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  align-items: left;
+  grid-template-columns: repeat(11, 1fr);
+  /* align-items: left; */
+  /* text-align: left; */
+  font-size: 10px;
+}
+.container {
+  width: 100vw;
+}
+
+.table th {
+  text-align: center;
+}
+.table td {
+  text-align: center;
+}
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
