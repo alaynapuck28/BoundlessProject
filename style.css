@@ -5,24 +5,33 @@
   /* text-align: left; */
   font-size: 10px;
 }
-.container {
+/* .container {
   width: 100vw;
+} */
+img {
+  max-width: 200px;
 }
-
 .table th {
   text-align: center;
 }
 .table td {
   text-align: center;
 }
-.form-control-borderless {
-  border: none;
+.table {
+  text-align: center;
 }
 
-.form-control-borderless:hover,
+#keyword {
+  text-align: left;
+}
+#jumbotron {
+  border-width: 2px !important;
+}
+
+/* .form-control-borderless:hover,
 .form-control-borderless:active,
 .form-control-borderless:focus {
   border: none;
   outline: none;
   box-shadow: none;
-}
+} */
