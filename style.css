@@ -1,8 +1,6 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  /* align-items: left; */
-  /* text-align: left; */
   font-size: 10px;
 }
 /* .container {
@@ -10,6 +8,8 @@
 } */
 img {
   max-width: 200px;
+  min-width: 200px;
+  min-height: 50px;
 }
 .table th {
   text-align: center;
@@ -26,6 +26,7 @@ img {
 }
 #jumbotron {
   border-width: 2px !important;
+  border-color: #e65149 !important;
 }
 
 /* .form-control-borderless:hover,

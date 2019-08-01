@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Bootstrap Project</title>
+    <title>Boundless Intern Bootstrap Project</title>
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -31,60 +31,61 @@
 
     <div class="container-fluid mb-5">
       <div class="row align-items-start mb-3">
-        <div class="col-sm">
+        <div class="col-md-2 mr-auto d-xs-none">
           <img
             src="https://www.boundlessnetwork.com/wp-content/uploads/2019/05/boundless_logo.svg"
             alt=""
-            class="rounded float-left mt-3 "
+            class="float-left mt-3 "
           />
         </div>
 
-        <div class="col-sm mt-3 ml-3">
+        <div class="col-md-2 mt-3 ml-auto col-xs-12">
           <div class="float-right text-center">
             <p class="mb-0">Alayna Puckett</p>
             <a href="#">Logout</a>
           </div>
         </div>
         <div class="w-100"></div>
-        <div class="col-sm col-2 mt-5">
-          <div class="dropdown btn-group">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-toggle="dropdown"
-            >
-              Menu
-            </button>
-
-            <ul class="dropdown-menu">
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Store List</a></li>
-              <li><a href="#">Create new store</a></li>
-              <li><a href="#">Clone Exisisting Store</a></li>
-              <li><a href="#">Store Orders</a></li>
-              <li><a href="#">Store Reports</a></li>
-            </ul>
+        <!-- ======Dropdown Menu -->
+        <div class="col-md-2 mt-5 mr-auto">
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Menu
+                </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Menu</a>
+              <a class="dropdown-item" href="#">Store List</a>
+              <a class="dropdown-item" href="#">Create new store</a>
+              <a class="dropdown-item" href="#">Clone Exisisting Store</a>
+              <a class="dropdown-item" href="#">Store Orders</a>
+              <a class="dropdown-item" href="#">Store Reports</a>
+            </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- ============== Client Name Banner ============-->
+
+    <!-- ============== Client Name Jumbotron ============-->
     <div
       id="jumbotron"
-      class="jumbotron-fluid text-center border-top border-bottom my-4 py-3 border-danger"
+      class="jumbotron-fluid text-center py-3 border-top border-bottom border-danger bg-light"
     >
-      <p class="text-center display-5 ">Manage Store Orders for Tim Client</p>
+      <h1 class="text-center lead text-muted">
+        <strong>Manage Store Orders for Tim Client</strong>
+      </h1>
     </div>
+    <!--========================Menus Middle Row=======================-->
+    <!-- =================Search by Keyword=============== -->
+    <!-- first column -->
 
-    <!--=================Menus=================-->
-
-    <div class="container-fluid">
-      <div class="row align-items-start">
-        <div class="col-sm col-xs-2 float-left">
+    <div class="container-fluid bg-light py-3">
+      <div class="row align-items-start text-muted mr-auto text-align-left">
+        <div class="col-md-2">
           <div class="form-group mb-5">
             <label>Keyword</label>
             <input
-              type="email"
+              type="text"
               class="form-control"
               id="keyword"
               aria-describedby="keywordHelp"
@@ -92,93 +93,170 @@
             />
           </div>
         </div>
+        <!-- ========End of  Keyword Search========== -->
 
-        <!-- ===============Checkboxes =============-->
-        <div class="col-sm col-2 mb-1">
-          <label> Status</label>
-          <div class="input-group mb-1">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <input
-                  type="checkbox"
-                  aria-label="Checkbox for following text input"
-                />
-              </div>
-            </div>
+        <!-- ===================== Status Checkboxes ================-->
+        <!-- second column -->
+
+        <div class="col-md-1 mb-1 mr-auto">
+          <label class="mb-0">Status</label>
+          <div class="form-check mt-0">
             <input
-              type="text"
-              class="form-control"
-              aria-label="Text input with checkbox"
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
             />
+            <label class="form-check-label" for="exampleCheck1">Pending</label>
           </div>
-          <div class="input-group mb-1">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <input
-                  type="checkbox"
-                  aria-label="Checkbox for following text input"
-                />
-              </div>
-            </div>
+          <div class="form-check mt-0">
             <input
-              type="text"
-              class="form-control"
-              aria-label="Text input with checkbox"
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
             />
+            <label class="form-check-label" for="exampleCheck1"
+              >Submitted</label
+            >
           </div>
-          <div class="input-group mb-1">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <input
-                  type="checkbox"
-                  aria-label="Checkbox for following text input"
-                />
-              </div>
-            </div>
+          <div class="form-check mt-0">
             <input
-              type="text"
-              class="form-control"
-              aria-label="Text input with checkbox"
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
             />
+            <label class="form-check-label" for="exampleCheck1"
+              >Cancelled</label
+            >
           </div>
-          <div class="input-group mb-1">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <input
-                  type="checkbox"
-                  aria-label="Checkbox for following text input"
-                />
-              </div>
-            </div>
+          <div class="form-check mt-0">
             <input
-              type="text"
-              class="form-control"
-              aria-label="Text input with checkbox"
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
             />
+            <label class="form-check-label" for="exampleCheck1">In-Cart</label>
           </div>
-          <div class="input-group mb-1">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <input
-                  type="checkbox"
-                  aria-label="Checkbox for following text input"
-                />
-              </div>
-            </div>
+          <div class="form-check">
             <input
-              type="text"
-              class="form-control"
-              aria-label="Text input with checkbox"
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
             />
+            <label class="form-check-label" for="exampleCheck1"
+              >Initiated</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Other</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Other</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Other</label
+            >
           </div>
         </div>
-        <div class="col-6"></div>
+        <!-- ============End of Check boxes================= -->
+        <!-- =========Stores multiple select Form============ -->
+        <!-- third column -->
+        <div class="col-md-2 text-muted mr-auto">
+          <div class="form-group px-0">
+            <label for="exampleFormControlSelect2">Stores</label>
+            <select
+              multiple
+              class="form-control"
+              id="exampleFormControlSelect2"
+            >
+              <option>All Stores</option>
+              <option>United Hardware</option>
+              <option>Example Store</option>
+              <option>Example Store 2</option>
+              <option>Example Store 3</option>
+              <option>Example Store 4</option>
+              <option>Example Store 5</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- ============End of Stores Form================== -->
+        <!-- ============Select Date================== -->
+        <div class="col-md-2 mr-auto">
+          <div >
+            <label for="start">Start date:</label>
+
+            <input class="mb-3 text-muted" type="date" id="date" />
+            <label for="end">End Date:</label>
+
+            <input class="mb-3 text-muted" type="date" id="date" />
+          </div>
+        </div>
+        <!-- Archived -->
+        <div class="col-md-2 mb-1 ">
+          <label class="mb-0">Archived</label>
+          <div class="form-check mt-0">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1">Show Archived Orders</label>
+          </div>
+        </div>
+        <!-- new column -->
+        <!-- <div class="col-sm-2"></div> -->
+        <div class="w-100"></div>
+        <div class="col-sm-1 mt-5 mb-0 ml-auto">
+          <div class="dropdown btn-group btn-sm">
+            <button class="btn btn-secondary" type="button">
+              Search
+            </button>
+          </div>
+        </div>
+        <!-- end of search button -->
       </div>
     </div>
-    <!-- =================Table================= -->
-    <div class="container-fluid mt-3">
+    <hr class="m-0"/>
+    <!-- End of select Data -->
+
+    <!-- ================End of Menus Row =================-->
+    <div class="row mt-3">
+      <div class="col-sm-2 ">
+        <p class="mr-auto align-items-end"><small>Number of Orders</small></p>
+      </div>
+        <div class="col-sm-2 mt-0 ml-auto">
+            <div class="dropdown btn-group">
+              <button class="btn btn-secondary btn-sm" type="button">
+                Submit Archive Changes
+              </button>
+            </div>
+
+    </div>
+
+    <!-- =================Table=========================== -->
+    <div class="container-fluid mt-3 table-responsive-md">
       <table class="table table-striped table-hover">
-        <thead>
+        <thead class="table-secondary">
           <tr class="grid-container ">
             <th>Order</th>
             <th>Buyer</th>
@@ -193,9 +271,14 @@
             <th>Archived</th>
           </tr>
         </thead>
-        <tbody id="littleContainer"></tbody>
+
+        <tbody id="littleContainer">
+          <!--JSON data goes in here-->
+        </tbody>
       </table>
+      <!-- =============End of Table===================== -->
     </div>
+    <!-- Scripts jquery, popper and bootsrap cdn -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
