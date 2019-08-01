@@ -1,4 +1,6 @@
-//Boundless coding challenge
+# Boundless Bootstrap Project
 
+This is a mockup for an updated Store Orders Site using Bootstrap for styling.
 
-![](./screen-captures.png)
+## Built With
+* [Bootstrap](https://getbootstrap.com/) - Used for styling the elements on the app
